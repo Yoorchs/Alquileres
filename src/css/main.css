@@ -88,21 +88,93 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+nav {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* IE 10 */
+    display: -webkit-flex; /*  Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* W3C Spec - Firefox, Chrome, Opera */
+    justify-content: center;
+    min-height: 50px;
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* IE 10 */
+    display: -webkit-flex; /*  Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* W3C Spec - Firefox, Chrome, Opera */
+    z-index: 1000;
+}
 
+/*Create a horizontal list with spacing*/
+li {
+    /*     display:inline-block;*/
 
+    margin-right: 1px;
+}
 
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/*======================================================
+    Form
+  =====================================================*/
+#contactForm {
+    width: 80%;
+    align-items: center;
+}
+#contactForm.flexcontainer{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+form .flexcontainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+#contactForm label{
+    max-width: 220px;
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+    flex: 1 0 120px;
+}
+form .flexcontainer:not(:last-child){
+    margin-bottom: 15px;
+}
+.text-error{
+    color: red;
+    margin-left: 15px;
+}
+form .flexcontainer div.text-error{
+    flex: 1 0 120px;
+}
+form button{
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+form .flexcontainer:last-child {
+    justify-content: flex-start;
+    margin-left: 200px;
+}
 
 /* ==========================================================================
    Helper classes

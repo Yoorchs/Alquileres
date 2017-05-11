@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Gestion de Alquileres</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,11 +19,53 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+    <nav>
+        <ul id="menu">
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Pisos</a></li>
+            <li><a href="inquilinos/inquilinos.html">Inquilinos</a></li>
+            <li><a href="#">Propietarios</a></li>
+        </ul>
+    </nav>
+    <header><h2>Gestion de alquileres</h2></header>
+    <main>
+        <section id="formularioContacto">
+            <div class="flexcontainer">
+                <form class="flexcontainer" id="contactForm" action="#" method="post">
+                    <div class="flexcontainer">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre"/>
+                        <div class="text-error"></div>
+                    </div>
+                    <div class="flexcontainer">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos"/>
+                        <div class="text-error"></div>
+                    </div>
+                    <div class="flexcontainer">
+                        <label for="dni">DNI:</label>
+                        <input type="text" name="dni" id="dni"/>
+                        <div class="text-error"></div>
+                    </div>
+                    <div class="flexcontainer">
+                        <label for="telefono">Telefono:</label>
+                        <input type="text" name="telefono" id="telefono"/>
+                        <div class="text-error"></div>
+                    </div>
+                    <div class="flexcontainer">
+                        <button class="">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
-        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+    <footer id="page-footer">
+        <a href="http://formacion.ipartek.com" target="_blank">Ipartek S. Coop.</a>
+    </footer>
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
